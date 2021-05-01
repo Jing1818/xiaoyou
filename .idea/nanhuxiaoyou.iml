@@ -123,6 +123,11 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/event-manager" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/deprecations" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/summerblue/generator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel-admin-ext/log-viewer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel-admin-ext/redis-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/predis/predis" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jxlwqq/composer-viewer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jxlwqq/env-manager" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

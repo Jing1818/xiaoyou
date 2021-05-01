@@ -395,6 +395,9 @@ return [
     |
     */
     'extensions' => [
-
+        'composer-viewer'=>[
+            'enable'=>true,
+            'which-composer'=>'/usr/local/bin/composer'
+        ]
     ],
 ];
