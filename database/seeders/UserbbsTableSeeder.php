@@ -9,7 +9,7 @@ class UserbbsTableSeeder extends Seeder
 {
     public function run()
     {
-        Userbb::factory()->count(10)->create();
+        Userbb::factory()->count(20)->create();
     }
 }
 

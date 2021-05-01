@@ -23,11 +23,16 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name(),
-            'email' => $this->faker->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-            'remember_token' => Str::random(10),
+            'account'=>$this->faker->unique()->userName,
+            'pwd'=>'999999999',
+            'real_name'=>$this->faker->unique()->name,
+            'card_id'=>$this->faker->randomDigitNotNull,
+            'avatar'=>$this->faker->imageUrl(),
+//            'phone'=>$this->faker->unique()->phoneNumber,
+            'nickname'=>$this->faker->userName,
+            'add_ip'=>$this->faker->ipv4,
+            'login_type'=>'wechat',
+            'user_type'=>'routine'
         ];
     }
 

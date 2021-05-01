@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration 
+class CreatePostsTable extends Migration
 {
 	public function up()
 	{
@@ -17,8 +17,7 @@ class CreatePostsTable extends Migration
             $table->integer('reply_count')->unsigned()->default(0);
             $table->integer('view_count')->unsigned()->default(0);
             $table->integer('order')->unsigned()->default(0);
-            $table->integer('like_id')->unsigned()->default(0);
-            $table->integer('comment_count')->unsigned()->default(0);
+            $table->integer('like_count')->unsigned()->default(0);
             $table->integer('plate_id')->unsigned()->index()->default(0);
             $table->timestamps();
         });

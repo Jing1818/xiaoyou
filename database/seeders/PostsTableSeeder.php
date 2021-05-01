@@ -9,7 +9,7 @@ class PostsTableSeeder extends Seeder
 {
     public function run()
     {
-        Post::factory()->count(10)->create();
+        Post::factory()->count(100)->create();
     }
 }
 

@@ -13,6 +13,16 @@ class PostFactory extends Factory
     {
         return [
             // $this->faker->name,
+            'content'=>$this->faker->realTextBetween(100,500),
+            'user_id'=>$this->faker->numberBetween(1,10),
+            'topic_id'=>$this->faker->numberBetween(1,10),
+            'activity_id'=>$this->faker->numberBetween(1,10),
+            'reply_count'=>$this->faker->numberBetween(10,20),
+            'view_count'=>$this->faker->numberBetween(100,200),
+            'order'=>0,
+            'like_count'=>$this->faker->numberBetween(100,200),
+            'plate_id'=>$this->faker->numberBetween(1,10)
+
         ];
     }
 }
