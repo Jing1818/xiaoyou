@@ -17,5 +17,8 @@ class Activity extends Model
     public function publishBy(){
         return $this->belongsTo(User::class);
     }
+    public function joinlog(){
+        return $this->hasMany(Activityjoinlog::class);
+    }
 
 }

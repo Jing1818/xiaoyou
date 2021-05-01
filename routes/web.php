@@ -30,3 +30,4 @@ Route::resource('plates', 'PlatesController', ['only' => ['index', 'show', 'crea
 Route::resource('activities', 'ActivitiesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
 Route::resource('comments', 'CommentsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
 Route::resource('replies', 'RepliesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('activityjoinlogs', 'ActivityjoinlogsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);

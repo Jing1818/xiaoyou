@@ -20,4 +20,5 @@ class Topic extends Model
     public function master(){
         return $this->hasOne(User::class,'uid');
     }
+
 }
