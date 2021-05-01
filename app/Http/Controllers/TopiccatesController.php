@@ -16,6 +16,7 @@ class TopiccatesController extends Controller
 
 	public function index()
 	{
+	    dd(Topiccate::find(1)->topics);
 		$topiccates = Topiccate::paginate();
 		return view('topiccates.index', compact('topiccates'));
 	}

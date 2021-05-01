@@ -12,9 +12,12 @@ class Topic extends Model
 
     public function topiccate()
     {
-        return $this->belongsTo(Topiccate::class);
+        return $this->belongsTo(Topiccate::class,'cate_id');
     }
     public function post(){
         return $this->hasMany(Post::class);
+    }
+    public function master(){
+        return $this->hasOne(User::class,'uid');
     }
 }

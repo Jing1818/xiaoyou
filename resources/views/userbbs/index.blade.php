@@ -27,7 +27,7 @@
               <tr>
                 <td class="text-xs-center"><strong>{{$userbb->id}}</strong></td>
 
-                <td>{{$userbb->user_id}}</td> <td>{{$userbb->post_count}}</td> <td>{{$userbb->comment_count}}</td> <td>{{$userbb->like_total}}</td> <td>{{$userbb->follow_count}}</td> <td>{{$userbb->fans_count}}</td> <td>{{$userbb->bbs_roles}}</td>
+                <td>{{$userbb->usershop->real_name}}</td> <td>{{$userbb->post_count}}</td> <td>{{$userbb->comment_count}}</td> <td>{{$userbb->like_total}}</td> <td>{{$userbb->follow_count}}</td> <td>{{$userbb->fans_count}}</td> <td>{{$userbb->bbs_roles}}</td>
 
                 <td class="text-xs-right">
                   <a class="btn btn-sm btn-primary" href="{{ route('userbbs.show', $userbb->id) }}">

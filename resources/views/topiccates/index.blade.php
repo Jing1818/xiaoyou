@@ -17,7 +17,7 @@
             <thead>
               <tr>
                 <th class="text-xs-center">#</th>
-                <th>Parent_id</th> <th>Name</th> <th>Order</th>
+                <th>Parent_id</th> <th>Name</th> <th>Order</th><th>帖子</th>
                 <th class="text-xs-right">OPTIONS</th>
               </tr>
             </thead>
@@ -27,7 +27,9 @@
               <tr>
                 <td class="text-xs-center"><strong>{{$topiccate->id}}</strong></td>
 
-                <td>{{$topiccate->parent_id}}</td> <td>{{$topiccate->name}}</td> <td>{{$topiccate->order}}</td>
+                <td>{{$topiccate->parent_id}}</td> <td>{{$topiccate->name}}</td> <td>{{$topiccate->order}}</td><td>
+
+                </td>
 
                 <td class="text-xs-right">
                   <a class="btn btn-sm btn-primary" href="{{ route('topiccates.show', $topiccate->id) }}">

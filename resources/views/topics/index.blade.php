@@ -27,7 +27,7 @@
               <tr>
                 <td class="text-xs-center"><strong>{{$topic->id}}</strong></td>
 
-                <td>{{$topic->cate_id}}</td> <td>{{$topic->topic_name}}</td> <td>{{$topic->topic_desc}}</td> <td>{{$topic->post_count}}</td> <td>{{$topic->member_count}}</td> <td>{{$topic->master_id}}</td>
+                <td>{{$topic->topiccate->name}}</td> <td>{{$topic->topic_name}}</td> <td>{{$topic->topic_desc}}</td> <td>{{$topic->post_count}}</td> <td>{{$topic->member_count}}</td> <td>{{$topic->master->real_name}}</td>
 
                 <td class="text-xs-right">
                   <a class="btn btn-sm btn-primary" href="{{ route('topics.show', $topic->id) }}">

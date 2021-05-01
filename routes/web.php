@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PostsController;
+use App\Http\Controllers\UserbbsController;
+use App\Http\Controllers\FollowsController;
+use App\Http\Controllers\TopiccatesController;
+use App\Http\Controllers\TopicsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +20,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::resource('posts', 'PostsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
-Route::resource('userbbs', 'UserbbsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
-Route::resource('follows', 'FollowsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
-Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
-Route::resource('topiccates', 'TopiccatesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('posts',PostsController::class)->only(['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']);
+Route::resource('userbbs',UserbbsController::class)->only(['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']);
+Route::resource('follows',FollowsController::class)->only(['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']);
+Route::resource('topics',TopicsController::class)->only(['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']);
+Route::resource('topiccates',TopiccatesController::class)->only(['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']);

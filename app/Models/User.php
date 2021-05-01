@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
     use HasFactory;
+    protected $primaryKey="uid";
     protected $table="user";
     protected $connection="mysql2";
     public $timestamps=false;
+    protected $fillable=['uid','real_name','mark'];
 }

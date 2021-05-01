@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Topic;
+use App\Models\User;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
+use Illuminate\Support\Facades\DB;
 
 class TopicsController extends Controller
 {
@@ -16,6 +17,7 @@ class TopicsController extends Controller
 
 	public function index()
 	{
+//	    dd(User::find(1));
 		$topics = Topic::paginate();
 		return view('topics.index', compact('topics'));
 	}

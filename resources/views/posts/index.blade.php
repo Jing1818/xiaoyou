@@ -17,7 +17,7 @@
             <thead>
               <tr>
                 <th class="text-xs-center">#</th>
-                <th>Content</th> <th>User_id</th> <th>Topic_id</th> <th>Activity_id</th> <th>Reply_count</th> <th>View_count</th> <th>Order</th> <th>Like_id</th> <th>Comment_count</th> <th>Plate_id</th>
+                <th>Content</th> <th>User_id</th> <th>Topic_id</th> <th>Activity_id</th> <th>Reply_count</th> <th>View_count</th> <th>Order</th> <th>Like_count</th> <th>Comment_count</th> <th>Plate_id</th>
                 <th class="text-xs-right">OPTIONS</th>
               </tr>
             </thead>
@@ -27,7 +27,7 @@
               <tr>
                 <td class="text-xs-center"><strong>{{$post->id}}</strong></td>
 
-                <td>{{$post->content}}</td> <td>{{$post->user_id}}</td> <td>{{$post->topic_id}}</td> <td>{{$post->activity_id}}</td> <td>{{$post->reply_count}}</td> <td>{{$post->view_count}}</td> <td>{{$post->order}}</td> <td>{{$post->like_id}}</td> <td>{{$post->comment_count}}</td> <td>{{$post->plate_id}}</td>
+                <td>{{$post->content}}</td> <td>{{$post->user->real_name}}</td> <td>{{$post->topic->topic_name}}</td> <td>{{$post->activity_id}}</td> <td>{{$post->reply_count}}</td> <td>{{$post->view_count}}</td> <td>{{$post->order}}</td> <td>{{$post->like_count}}</td> <td>{{$post->comment_count}}</td> <td>{{$post->plate_id}}</td>
 
                 <td class="text-xs-right">
                   <a class="btn btn-sm btn-primary" href="{{ route('posts.show', $post->id) }}">
