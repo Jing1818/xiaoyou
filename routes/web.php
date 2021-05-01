@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::resource('posts', 'PostsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('userbbs', 'UserbbsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
