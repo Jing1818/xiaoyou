@@ -25,3 +25,8 @@ Route::resource('userbbs',UserbbsController::class)->only(['index', 'show', 'cre
 Route::resource('follows',FollowsController::class)->only(['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']);
 Route::resource('topics',TopicsController::class)->only(['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']);
 Route::resource('topiccates',TopiccatesController::class)->only(['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']);
+
+Route::resource('plates', 'PlatesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('activities', 'ActivitiesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('comments', 'CommentsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('replies', 'RepliesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
