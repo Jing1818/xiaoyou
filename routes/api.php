@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Api\UserbbsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('v1')->name('api.v1')->group(function (){
-    
+Route::prefix('v1')->namespace('Api')->name('api.v1')->group(function (){
+    Route::get('userbbs/{userbb}',[UserbbsController::class,'show'])->name('userbbs.show');
 });

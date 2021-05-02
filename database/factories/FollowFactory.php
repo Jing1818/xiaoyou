@@ -13,6 +13,8 @@ class FollowFactory extends Factory
     {
         return [
             // $this->faker->name,
+            'user_id'=>$this->faker->unique()->numberBetween(2,20),
+            'follow_user_id'=>1
         ];
     }
 }

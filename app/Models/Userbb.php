@@ -19,4 +19,9 @@ class Userbb extends Model
         return $this->hasMany(Topic::class,'master_id');
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'user_id';
+    }
+
 }
