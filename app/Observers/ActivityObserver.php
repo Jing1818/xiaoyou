@@ -20,6 +20,6 @@ class ActivityObserver
         //
     }
     public function saved(Activity $activity){
-        Cache::forget()
+//        Cache::forget()
     }
 }

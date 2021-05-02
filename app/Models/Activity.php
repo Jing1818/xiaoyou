@@ -22,13 +22,13 @@ class Activity extends Model
     public function joinlog(){
         return $this->hasMany(Activityjoinlog::class);
     }
-    public function getAllCached(){
-        return Cache::remember($this->cache_key,$this->cache_expire_in_seconds,function (){
-            return ;
-        });
+    public function getRecommond(){
+        $recommandActivity=Activity::query()
+            ->where('end_time','>=',time())
+            ->where('is_tuijian','=','1')
+            ->get();
+        return $recommandActivity;
     }
-    private function getRecommond(){
-        
-    }
+
 
 }

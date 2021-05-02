@@ -21,4 +21,9 @@ class Topic extends Model
         return $this->hasOne(User::class,'uid');
     }
 
+    public function users()
+    {
+//        return $this->hasMany()
+    }
+
 }
