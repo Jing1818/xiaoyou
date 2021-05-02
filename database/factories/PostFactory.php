@@ -21,7 +21,18 @@ class PostFactory extends Factory
             'view_count'=>$this->faker->numberBetween(100,200),
             'order'=>0,
             'like_count'=>$this->faker->numberBetween(100,200),
-            'plate_id'=>$this->faker->numberBetween(1,10)
+            'plate_id'=>$this->faker->numberBetween(1,10),
+            'images'=>json_encode([
+                $this->faker->imageUrl('200','200','cats'),
+                $this->faker->imageUrl('200','200','cats'),
+                $this->faker->imageUrl('200','200','cats'),
+                $this->faker->imageUrl('200','200','cats'),
+                $this->faker->imageUrl('200','200','cats'),
+                $this->faker->imageUrl('200','200','cats'),
+                $this->faker->imageUrl('200','200','cats'),
+
+
+            ])
 
         ];
     }

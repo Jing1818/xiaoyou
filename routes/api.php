@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UserbbsController;
+use App\Http\Controllers\Api\IndexController;
+use App\Http\Controllers\Api\PostsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -15,5 +17,7 @@ use App\Http\Controllers\Api\UserbbsController;
 */
 
 Route::prefix('v1')->namespace('Api')->name('api.v1')->group(function (){
-    Route::get('userbbs/{userbb}',[UserbbsController::class,'show'])->name('userbbs.show');
+    Route::get('user/{user}',[UserbbsController::class,'show'])->name('user.show');
+    Route::post('index/{user}',[IndexController::class,'floor'])->name('index.floor');
+    Route::get('post/{post}',[PostsController::class,'show'])->name('post.show');
 });

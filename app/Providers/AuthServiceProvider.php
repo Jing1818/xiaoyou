@@ -13,6 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
+		 \App\Models\Topicjoin::class => \App\Policies\TopicjoinPolicy::class,
 		 \App\Models\Activityjoinlog::class => \App\Policies\ActivityjoinlogPolicy::class,
 		 \App\Models\Reply::class => \App\Policies\ReplyPolicy::class,
 		 \App\Models\Comment::class => \App\Policies\CommentPolicy::class,

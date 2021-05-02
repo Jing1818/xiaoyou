@@ -31,3 +31,4 @@ Route::resource('activities', 'ActivitiesController', ['only' => ['index', 'show
 Route::resource('comments', 'CommentsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
 Route::resource('replies', 'RepliesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
 Route::resource('activityjoinlogs', 'ActivityjoinlogsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('topicjoins', 'TopicjoinsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
