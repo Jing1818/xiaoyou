@@ -15,7 +15,7 @@ class User extends Model
     protected $connection="mysql2";
     public $timestamps=false;
     protected $fillable=['uid','real_name','mark'];
-    public $personal_cache_key='';
+    protected $personal_cache_key='';
     protected $cache_expire_in_seconds=1440*60;
     public function topics(){
         return $this->belongsToMany(Topic::class,'topicjoins','user_id','topic_id','','uid');
