@@ -16,17 +16,18 @@ class DatabaseSeeder extends Seeder
     {
 //         \App\Models\User::factory(10)->create();
 //        $this->call(UsersTableSeeder::class);
-		$this->call(TopicjoinsTableSeeder::class);
+//		$this->call(TopicjoinsTableSeeder::class);
 //		$this->call(ActivityjoinlogsTableSeeder::class);
 //		$this->call(RepliesTableSeeder::class);
 //		$this->call(CommentsTableSeeder::class);
-//		$this->call(ActivitiesTableSeeder::class);
+		$this->call(ActivitiesTableSeeder::class);
 //		$this->call(PlatesTableSeeder::class);
 //		$this->call(TopiccatesTableSeeder::class);
 //		$this->call(TopicsTableSeeder::class);
-        $this->call(PostsTableSeeder::class);
+//        $this->call(PostsTableSeeder::class);
 //        $this->call(TopicsTableSeeder::class);
-        $this->call(FollowsTableSeeder::class);
+//        $this->call(FollowsTableSeeder::class);
     }
+
 
 }

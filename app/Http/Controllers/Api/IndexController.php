@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\PostResource;
+use App\Models\Activity;
 use App\Models\Post;
 use App\Models\Topic;
 use App\Models\Traits\ActiveUserHelper;
@@ -21,8 +22,8 @@ class IndexController extends Controller
         $post=$query->with('user','topic')->paginate();
         $postdata= PostResource::collection($post);
         $active_user=$this->getActiveUsers();
-        dd($active_user);
-//        $recommendActivity=
+        $recommendActivity=
+
         return;
     }
 }
